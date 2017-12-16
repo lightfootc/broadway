@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Broadway Design | Welcome</title>
-    <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
   </head>
   <body>
-    <header class="background-img">
+    <div class="background-img">
       <h1>Broadway Design</h1>
-      <nav>
+<!-- Took out the nav tag because we will not be navigating to any other pages -->
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#"> Process</a></li>
@@ -16,19 +16,33 @@
           <li><a href="#">Team</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-      </nav>
-    </header>
-    <h2>Our Process</h2>
-    <img src="#" alt>
-      <h3>Identify</h3>
-        <p>We focus on the most important details.</p>
-        <img src="#" alt>
-      <h3>Understand</h3>
-        <p>We study our projects inside and out.</p>
-        <img src="#" alt>
-      <h3>Execute</h3>
-        <p>We put everything we have into our work.</p>
-    <h2 class="background-img"> Designed in New York</h2>
+    </div>
+
+    <div class="upper-body">
+      <h2>Our Process</h2>
+      <div class="upper-bodyA">
+        <img src="resources/img/identify.svg">
+        <h3>Identify</h3>
+          <p>We focus on the most important details.</p>
+      </div>
+      <div class="upper-bodyA">
+        <img src="resources/img/understand.svg">
+        <h3>understand</h3>
+          <p>We study our projects inside and out.</p>
+      </div>
+      <div class="upper-bodyA">
+        <img src="resources/img/execute.svg">
+        <h3>Execute</h3>
+          <p>We put everything we have into our work.</p>
+      </div>
+    </div>
+<!-- Had to place this heading in a separate section to style it properly -->
+
+    <div class="background-img">
+      <h2>Designed in New York</h2>
+    </div>
+
+    <div class="lower-body">
       <h2>Portfolio</h2>
         <p>Coming Soon</p>
       <h2>Team</h2>
@@ -37,17 +51,18 @@
         <p>Phone: (555)-555-5555</p>
         <p>E-mail: test@example.com</p>
         <p>Twitter: @test</p>
-    <footer>
-      <p>&copy; Broadway 2016</p>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#"> Process</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </footer>
+    </div>
+
+    <div class="footer">
+      <p>&copy; Broadway 2016
+<!-- Took out the nav tag because we will not be navigating to any other pages -->
+<!-- Took away the unordered list so that I could display the paragraph tag with the list tags -->
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Work</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+      </p>
+    </div>
   </body>
 </html>
